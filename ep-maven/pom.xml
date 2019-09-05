@@ -40,6 +40,7 @@
     <packaging>maven-plugin</packaging>
 
     <name>Event Processing Maven Plugin</name>
+    <description>Event Processing Maven Plugin</description>
 
     <url>https://github.com/TIBCOSoftware/tibco-streaming-maven-plugin</url>
 
@@ -49,6 +50,18 @@
         <name>TIBCO Software Inc.</name>
         <url>http://www.tibco.com</url>
     </organization>
+
+    <developers>
+        <developer>
+            <id>plord</id>
+            <name>Peter Lord</name>
+            <email>plord@tibco.com</email>
+            <organization>TIBCO Software Inc.</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
