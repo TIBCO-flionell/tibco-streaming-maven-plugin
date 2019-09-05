@@ -664,12 +664,13 @@
                         <goals>
                             <goal>sign</goal>
                         </goals>
+                        <!-- needed for newer gpg
                         <configuration>
                             <gpgArguments>
-                                <arg>--pinentry-mode</arg>
+                                <arg>- -pinentry-mode</arg>
                                 <arg>loopback</arg>
                             </gpgArguments>
-                        </configuration>                      
+                        </configuration> -->
                     </execution>
                 </executions>
             </plugin>
