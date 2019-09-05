@@ -70,22 +70,22 @@ The recommended application codeline structure is :
 When the maven install goal is called (mvn install), this pom.xml instructs
 maven to perform the following steps :
 
-1. Uses [install-product](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/install-product-mojo.html) to check if the 
+1. Uses [install-product](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/install-product-mojo.html) to check if the 
 dependent product ( in this case com.tibco.ep.dtm:platform\_linuxx86_64 ) is
 installed.  If its not, maven will download the archive and the plugin
 will extract into $TIBCO\_EP_HOME.
 
-2. Uses [package-application](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/package-application-mojo.html) to create
+2. Uses [package-application](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/package-application-mojo.html) to create
 a application archive zip file in the build directory (by default, set to 
 target) and attaches it to the build.
 
-3. Uses [start-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/start-nodes-mojo.html) to start a test cluster.  
+3. Uses [start-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/start-nodes-mojo.html) to start a test cluster.  
 Since this pom.xml has no configuration, a single node is started 
 A.helloworld with a random but unused discovery port.  Also, the
 application archive is deployed to the cluster using the supplied node
 deployment configuration file.
 
-4. Uses [stop-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/stop-nodes-mojo.html) to stop and remove the test 
+4. Uses [stop-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/stop-nodes-mojo.html) to stop and remove the test 
 nodes
 
 5. Uses the standard maven plugin [maven-install-plugin:install](https://maven.apache.org/plugins/maven-install-plugin/install-mojo.html)

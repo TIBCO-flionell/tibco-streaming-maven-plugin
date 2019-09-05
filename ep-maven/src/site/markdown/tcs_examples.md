@@ -49,12 +49,12 @@ repository, a TIBCO Cloud Streaming fragment.
  When the maven install goal is called (mvn install), this pom.xml instructs
 maven to perform the following steps :
   
-1. Uses [install-product](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/install-product-mojo.html) to check if the 
+1. Uses [install-product](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/install-product-mojo.html) to check if the 
     dependent product ( in this case com.tibco.ep.thirdparty:tibco-sb\_linuxx86_64 ) is
     installed.  If its not, maven will download the archive and the plugin
     will extract into $TIBCO_EP_HOME.
 
-2. Uses [package-tcs-fragment](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/package-tcs-fragment-mojo.html) to create
+2. Uses [package-tcs-fragment](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/package-tcs-fragment-mojo.html) to create
     a TIBCO Cloud Streaming fragment zip file in the build directory (by default, set to target)
     and attaches it to the build.
 

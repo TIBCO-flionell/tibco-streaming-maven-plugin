@@ -48,7 +48,7 @@ repository, a java fragment.
 When the maven install goal is called (mvn install), this pom.xml instructs
 maven to perform the following steps :
   
-1. Uses [install-product](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/install-product-mojo.html) to check if the 
+1. Uses [install-product](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/install-product-mojo.html) to check if the 
     dependent product ( in this case com.tibco.ep.dtm:platform\_linuxx86_64 ) is
     installed.  If its not, maven will download the archive and the plugin
     will extract into $TIBCO\_EP\_HOME.
@@ -59,19 +59,19 @@ maven to perform the following steps :
 3. Uses the standard maven plugin [maven-compiler-plugin:testCompile](https://maven.apache.org/plugins/maven-compiler-plugin/testCompile-mojo.html)
     to compile any java test sources to class files.
     
-4. Uses [start-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/start-nodes-mojo.html) to start a test cluster.  
+4. Uses [start-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/start-nodes-mojo.html) to start a test cluster.  
     Since this pom.xml has no configuration, a single node is started 
     A.${artifactId} (ie A.helloworld in this example) with a random but unused 
     discovery port.
     
-5. Uses [test-java-fragment](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/test-java-fragment-mojo.html) to launch
+5. Uses [test-java-fragment](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/test-java-fragment-mojo.html) to launch
     junit on the cluster and report the test results.  Should the test cases
     fail then no further processing occurs.
     
-6. Uses [stop-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/stop-nodes-mojo.html) to stop and remove the test 
+6. Uses [stop-nodes](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/stop-nodes-mojo.html) to stop and remove the test 
     nodes
   
-7. Uses [package-java-fragment](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/package-java-fragment-mojo.html) to create
+7. Uses [package-java-fragment](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/package-java-fragment-mojo.html) to create
     a java fragment zip file in the build directory (by default, set to target)
     and attaches it to the build.
     

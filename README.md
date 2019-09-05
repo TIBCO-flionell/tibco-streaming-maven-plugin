@@ -16,4 +16,4 @@ Overview:
     * [Continuous integration examples](ep-maven/src/site/markdown/contint_examples.md)
     * [Cloud examples](ep-maven/src/site/markdown/cloud_examples.md)
 * [Goals](ep-maven/src/site/markdown/goals.md)
-* [html docs](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0-SNAPSHOT/ep-maven-plugin/)
+* [html docs](https://tibcosoftware.github.io/tibco-streaming-maven-plugin/1.5.0/ep-maven-plugin/)

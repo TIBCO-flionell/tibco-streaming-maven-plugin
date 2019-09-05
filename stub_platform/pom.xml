@@ -44,7 +44,7 @@
     <parent>
         <groupId>com.tibco.ep</groupId>
         <artifactId>ep-maven</artifactId>
-        <version>1.5.0-SNAPSHOT</version>
+        <version>1.5.0</version>
         <relativePath>..</relativePath>
     </parent>  
 
