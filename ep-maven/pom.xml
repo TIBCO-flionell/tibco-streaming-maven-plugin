@@ -661,7 +661,7 @@
                 <configuration>
                     <server>github</server>
                     <message>Updated site documentation from jenkins</message>
-                     <!-- <merge>true</merge> -->
+                    <merge>true</merge>
                      <skip>false</skip>
                      <path>${project.version}/${project.artifactId}</path>
                 </configuration>
